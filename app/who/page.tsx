@@ -51,6 +51,10 @@ export default function WhoPage() {
           { href: "/chronicle", label: "연대기" },
           { href: `${GERMANIC_URL}/who`, label: "게르만이야기: 게르만족은 누구인가" },
           { href: `${GERMANIC_URL}/tribes#saxons`, label: "게르만이야기: 색슨" },
+          { href: "https://nadoo-world.vercel.app/countries/no", label: "나두세계: 오늘의 노르웨이" },
+          { href: "https://nadoo-world.vercel.app/countries/dk", label: "나두세계: 오늘의 덴마크" },
+          { href: "https://nadoo-world.vercel.app/countries/se", label: "나두세계: 오늘의 스웨덴" },
+          { href: "https://nadoo-world.vercel.app/countries/is", label: "나두세계: 오늘의 아이슬란드" },
         ]}
       />
     </div>
