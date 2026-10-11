@@ -29,6 +29,16 @@ export function GermanicBridge({ id = "from-germanic" }: { id?: string }) {
         </li>
         <li>
           <a
+            href={`${GERMANIC_URL}/kingdoms`}
+            className="inline-block rounded-full border border-line bg-bg px-4 py-2 hover:border-terra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            로마 이후의 게르만 왕국
+          </a>
+        </li>
+        <li>
+          <a
             href={`${GERMANIC_URL}/kingdoms/anglo-saxons`}
             className="inline-block rounded-full border border-line bg-bg px-4 py-2 hover:border-terra"
             target="_blank"
