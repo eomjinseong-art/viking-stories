@@ -1,5 +1,7 @@
 "use client";
 
+import { setActiveTree } from "@/components/TreePanel";
+
 import Link from "next/link";
 import { Elsewhere } from "@/components/Elsewhere";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
@@ -66,6 +68,10 @@ export function FamilyTreeView() {
   const selectedNode = selected ? tree.byId.get(selected) : undefined;
   const related = useMemo(() => (selected && tree.byId.has(selected) ? relatedSet(tree, selected) : null), [selected, tree]);
   const relations = selected && tree.byId.has(selected) ? relationsOf(tree, selected) : null;
+
+  useEffect(() => {
+    setActiveTree(treeId);
+  }, [treeId]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);

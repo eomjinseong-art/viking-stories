@@ -2,11 +2,12 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Elsewhere } from "@/components/Elsewhere";
 import { FamilyTreeView } from "@/components/FamilyTreeView";
+import { TreePanel } from "@/components/TreePanel";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
 import { SisterStrip } from "@/components/SisterSites";
 import { SourceList } from "@/components/SourceList";
-import { TREES, focusHref, relationsOf } from "@/data/family-tree";
+import { DEFAULT_TREE_ID, TREES, focusHref, relationsOf } from "@/data/family-tree";
 import type { RelationPerson } from "@/data/family-tree";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { GERMANIC_URL, OTHER_FAMILY_TREES } from "@/lib/site";
@@ -55,6 +56,7 @@ export default function FamilyTreePage() {
       <FamilyTreeView />
 
       {TREES.map((tree) => (
+        <TreePanel key={tree.id} id={tree.id} defaultId={DEFAULT_TREE_ID}>
         <section key={tree.id} className="mt-12" aria-labelledby={`prose-${tree.id}`}>
           <h2 id={`prose-${tree.id}`} className="font-serif text-2xl text-ink">
             {tree.ko} <span className="text-sm font-sans tracking-wide text-muted">{tree.en}</span>
@@ -138,6 +140,7 @@ export default function FamilyTreePage() {
           ) : null}
           <SourceList sources={tree.sources} />
         </section>
+        </TreePanel>
       ))}
     </div>
   );
