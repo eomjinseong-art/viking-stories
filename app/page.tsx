@@ -8,6 +8,7 @@ import { films } from "@/data/films";
 import { people } from "@/data/people";
 import { jsonLd, pageMetadata, websiteLd } from "@/lib/seo";
 import { BRAND_LINE, GERMANIC_URL, HOME_SECTIONS, SITE_SUB, SITE_TAGLINE } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const metadata = pageMetadata({
   title: "홈",
@@ -55,6 +56,7 @@ export default function Home() {
         </div>
       </section>
 
+      <CoupangCard />
       <div className="dentil opacity-50" aria-hidden />
 
       <section className="mt-10" aria-labelledby="door-heading">

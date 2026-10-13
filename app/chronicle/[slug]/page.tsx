@@ -13,6 +13,7 @@ import { Rich } from "@/components/Rich";
 import { SourceList } from "@/components/SourceList";
 import { chapterBySlug, chapters } from "@/data/chapters";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export function generateStaticParams() {
   return chapters.map((chapter) => ({ slug: chapter.slug }));
@@ -93,6 +94,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ slug: 
         prev={prev ? { href: `/chronicle/${prev.slug}`, label: prev.title } : undefined}
         next={next ? { href: `/chronicle/${next.slug}`, label: next.title } : undefined}
       />
+      <CoupangCard />
     </article>
   );
 }
