@@ -6,6 +6,7 @@ import { SisterStrip } from "@/components/SisterSites";
 import { films } from "@/data/films";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { CHECKLIST_URL, OTHER_FILM_PAGES, TIMELINE_URL } from "@/lib/site";
+import { NadooHubFilmsLink } from "@/components/NadooHubLink";
 
 export const metadata = pageMetadata({
   title: "영화·드라마",
@@ -61,6 +62,7 @@ export default function FilmsPage() {
         ))}
       </ul>
       <SisterStrip title="다른 사이트의 영화" en="Films on sister sites" links={OTHER_FILM_PAGES} />
+      <NadooHubFilmsLink />
     </div>
   );
 }
