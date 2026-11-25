@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Elsewhere } from "@/components/Elsewhere";
@@ -45,6 +46,7 @@ export default function FamilyTreePage() {
         title="관계도"
         lead="누가 누구의 자녀인지, 누가 전승으로만 이어지는지를 그림으로 나눕니다. 금색 실선은 혈연, 금색 점선은 입양, 장미색은 배우자, 보라색 점선은 전승이 갈리거나 근거가 약한 부모입니다. 칸을 누르면 부모·배우자·자녀·형제가 밝아집니다."
       />
+      <NadooAd inline />
       <p className="mt-3 max-w-3xl text-sm leading-7 text-muted">
         라그나르의 아들들은 실선으로 잇지 않았습니다. 엠마는 덴마크 가계에만 있고, 에텔플레드는 에텔스탄의 어머니가 아닙니다. 프랑크 왕가의 앞 줄기는{" "}
         <a href={`${GERMANIC_URL}/family-tree?tree=franks&focus=charlemagne`} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -109,6 +110,7 @@ export default async function PersonPage({ params }: { params: Promise<{ slug: s
           는 확인된 작품만 적습니다.
         </p>
       )}
+      <NadooAd inline />
       <SourceList sources={person.sources} />
       <Pager
         prev={prev ? { href: `/people/${prev.slug}`, label: prev.nameKo } : undefined}

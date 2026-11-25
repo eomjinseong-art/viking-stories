@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
@@ -28,6 +29,7 @@ export default function MapPage() {
         title="원정·정착 지도"
         lead="손으로 그린 도식입니다. 해안선과 거리는 실제 지도가 아니고, 한 해의 국경도 아닙니다. 붉은 선은 바이킹 시대에 배가 오가던 방향이고, 보라 점선은 그 시대가 끝난 뒤 노르망디 후손이 남쪽으로 내려간 길입니다."
       />
+      <NadooAd inline />
       <RouteMap />
       <section className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="rounded-lg border border-line bg-card p-5">
