@@ -15,7 +15,7 @@ const serif = Noto_Serif_KR({ subsets: ["latin"], variable: "--font-noto-serif",
 const description = `${SITE_TAGLINE}. ${SITE_SUB}`;
 
 export const metadata: Metadata = {
-  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM" },
+  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM", other: { "naver-site-verification": "8dc4fa4afce2c6a2dce43ac8b6e92e401c370406" } },
   metadataBase: new URL(SITE_URL),
   title: { default: `${SITE_NAME} · 쉬운 바이킹 역사`, template: `%s · ${SITE_NAME}` },
   description,
