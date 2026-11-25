@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { CoupangBanner } from "@/components/CoupangBanner";
 import { GermanicBridge } from "@/components/GermanicBridge";
@@ -86,6 +87,7 @@ export default function Home() {
         </div>
       </section>
 
+      <NadooAd inline />
       <section className="mt-12" aria-labelledby="menu-heading">
         <h2 id="menu-heading" className="font-serif text-2xl text-ink">
           모든 길

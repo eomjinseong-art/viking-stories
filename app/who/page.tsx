@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -30,6 +31,7 @@ export default function WhoPage() {
         title="바이킹은 누구인가"
         lead="스칸디나비아와 그 정착지에서 노르드어를 쓰던 사람들입니다. 바이킹은 그 모두가 매일 쓰던 나라 이름이라기보다, 바다로 나가 약탈하거나 교역하던 일에 가까운 말입니다. 앞 세기의 게르만족과는 말의 사촌이고, 같은 날의 한 왕국은 아닙니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-6">
         {identitySections.map((section) => (
           <GuideBlock

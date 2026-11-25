@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideBlock } from "@/components/GuideBlock";
 import { JsonLd } from "@/components/JsonLd";
@@ -30,6 +31,7 @@ export default function MythPage() {
         title="북유럽 신화 입문"
         lead="오딘과 토르의 줄거리는 바이킹이 배에 싣고 다니던 경전이 아닙니다. 지금 읽는 이야기는 대개 13세기 아이슬란드에서 정리되었습니다. 나두신화에는 그리스·로마 신만 있어, 북유럽 신은 이 페이지에 둡니다."
       />
+      <NadooAd inline />
       <div className="mt-8 space-y-6">
         {mythSections.map((section) => (
           <GuideBlock

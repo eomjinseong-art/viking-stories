@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FilmCard } from "@/components/FilmCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -49,6 +50,7 @@ export default function FilmsPage() {
         </a>
         <span className="ml-2 text-xs text-muted">이 페이지의 {films.length}편 · movie checklist</span>
       </p>
+      <NadooAd inline />
       <p className="mt-2 text-xs leading-5 text-muted">
         앵커가 겹치는 작품의 원 목록은{" "}
         <a href={`${TIMELINE_URL}/films.json`} className="text-laurel underline decoration-line underline-offset-4 hover:text-terra" target="_blank" rel="noopener noreferrer">

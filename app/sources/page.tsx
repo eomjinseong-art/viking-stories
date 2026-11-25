@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHead } from "@/components/PageHead";
 import { pageMetadata } from "@/lib/seo";
@@ -117,6 +118,7 @@ export default function SourcesPage() {
         </ul>
       </section>
 
+      <NadooAd inline />
       <section className="mt-8">
         <h2 className="font-serif text-xl text-ink">현대 개설</h2>
         <ul className="mt-3 space-y-3 text-sm leading-7">
